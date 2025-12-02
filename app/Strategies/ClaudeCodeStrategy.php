@@ -32,4 +32,11 @@ class ClaudeCodeStrategy implements CommitStrategy
     {
         return $provider === 'claude';
     }
+
+    public function isAvailable(): bool
+    {
+        $result = Process::run('which claude');
+
+        return $result->successful() && ! empty(trim($result->output()));
+    }
 }

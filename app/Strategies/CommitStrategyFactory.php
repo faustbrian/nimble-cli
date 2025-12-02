@@ -13,6 +13,7 @@ class CommitStrategyFactory
     public function __construct()
     {
         $this->register(new ClaudeCodeStrategy);
+        $this->register(new WipStrategy);
     }
 
     public function register(CommitStrategy $strategy): self
