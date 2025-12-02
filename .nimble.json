@@ -1,0 +1,11 @@
+{
+    "watch_interval": 30,
+    "auto_stage": true,
+    "ai_provider": "claude",
+    "commit_style": "conventional",
+    "claude": {
+        "timeout": 600000,
+        "skip_permissions": true
+    },
+    "system_prompt": "Write git commit messages following conventional commits format: <type>[scope]: <description>. Use types: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert. Keep subject line under 50 chars, use imperative mood (Add not Added), capitalize first letter. If body needed, separate with blank line and wrap at 72 chars. Focus on what and why, not how. Examples: feat: add user authentication, fix(api): resolve timeout issue"
+}

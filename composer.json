@@ -1,0 +1,46 @@
+{
+    "name": "cline/nimble",
+    "description": "Automated git commits with AI-powered conventional commit messages.",
+    "keywords": ["git", "commits", "ai", "conventional-commits", "claude", "automation"],
+    "homepage": "https://github.com/cline/nimble",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cline",
+            "email": "hello@cline.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel-zero/framework": "^12.0.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.25.1",
+        "mockery/mockery": "^1.6.12",
+        "pestphp/pest": "^3.8.4|^4.1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "bin": ["nimble"]
+}
